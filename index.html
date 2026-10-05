@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MWA, lunettes de soleil premium pensées pour illuminer chaque journée.">
+  <title>MWA | Lunettes de soleil premium</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#accueil" aria-label="MWA, retour à l'accueil">MWA</a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#nouveautes">Nouveautés</a>
+      <a href="#collection">Collection</a>
+      <a href="#histoire">Notre histoire</a>
+      <a href="#journal">Blog</a>
+      <a href="#contact">Contactez-nous</a>
+    </nav>
+    <button class="account-button" type="button" aria-label="Se connecter" title="Se connecter">
+      <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 20c.7-3.3 3.2-5.2 7-5.2s6.3 1.9 7 5.2"></path></svg>
+    </button>
+    <button class="cart-button" type="button" aria-label="Ouvrir le panier" aria-expanded="false">
+      Panier <span id="cart-count">0</span>
+    </button>
+  </header>
+
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-label="Votre panier">
+    <div class="cart-drawer-header"><div><p class="eyebrow">Votre sélection</p><h2>Le panier</h2></div><button class="close-cart" type="button" aria-label="Fermer le panier">×</button></div>
+    <div class="cart-items" id="cart-items"><p class="empty-cart">Votre panier est encore vide.<br>Les belles choses arrivent juste en dessous.</p></div>
+    <div class="cart-summary"><div><span>Total</span><strong id="cart-total">0 €</strong></div><button class="button button-dark checkout-button" type="button" disabled>Passer commande <span aria-hidden="true">→</span></button></div>
+  </aside>
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-copy">
+        <p class="eyebrow">Collection 2026 · Éclat naturel</p>
+        <h1>La lumière vous va si bien.</h1>
+        <p class="hero-intro">Des lunettes de soleil premium, dessinées pour accompagner les beaux jours avec caractère et légèreté.</p>
+        <a class="button button-light" href="#collection">Découvrir la collection <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-art" aria-label="Lunettes MWA de la collection premium">
+        <img src="lunettes-premium.jpg.jpg" alt="Lunettes de soleil MWA sur un fond lumineux">
+        <span class="hero-stamp">Protection<br><strong>UV400</strong></span>
+      </div>
+    </section>
+
+    <section class="new-arrivals section-shell" id="nouveautes">
+      <div class="new-arrivals-copy"><p class="eyebrow">Nouveauté · Quartz</p><h2>Un éclat tout particulier.</h2><p>Quartz rejoint la collection MWA avec une monture lumineuse, des lignes douces et un confort pensé pour durer toute la journée.</p><a class="button button-dark" href="#collection">Découvrir Quartz <span aria-hidden="true">→</span></a></div>
+      <div class="new-arrivals-image"><img src="Lunette MWA.png" alt="Le modèle Quartz de la nouvelle collection" loading="lazy"><span>01 / 01</span></div>
+    </section>
+
+    <section class="collection section-shell" id="collection">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Les indispensables MWA</p>
+          <h2>Quatre façons de briller.</h2>
+        </div>
+        <p>Une ligne singulière, quatre personnalités. Choisissez celle qui raconte le mieux votre été.</p>
+      </div>
+      <div class="products">
+        <article class="product-card">
+          <div class="product-image"><img src="Image 1.jpg" alt="Lunettes de soleil Diamond" loading="lazy"><span class="product-tag">Iconique</span></div>
+          <div class="product-content"><div class="product-topline"><h3>Diamond</h3><strong>129 €</strong></div><p>Une monture noire sculptée et des verres fumés pour un style net, précieux et intemporel.</p><button class="add-cart" type="button">Ajouter au panier</button></div>
+        </article>
+        <article class="product-card">
+          <div class="product-image"><img src="Image 2.jpg" alt="Lunettes de soleil Saphir" loading="lazy"><span class="product-tag">Éclatant</span></div>
+          <div class="product-content"><div class="product-topline"><h3>Saphir</h3><strong>119 €</strong></div><p>Une silhouette légère aux reflets bleutés, pensée pour les escapades au bord de l'eau.</p><button class="add-cart" type="button">Ajouter au panier</button></div>
+        </article>
+        <article class="product-card">
+          <div class="product-image"><img src="Image 3.jpg" alt="Lunettes de soleil Rubis" loading="lazy"><span class="product-tag">Audacieux</span></div>
+          <div class="product-content"><div class="product-topline"><h3>Rubis</h3><strong>109 €</strong></div><p>Une teinte chaleureuse et une présence affirmée pour donner du relief à chaque tenue.</p><button class="add-cart" type="button">Ajouter au panier</button></div>
+        </article>
+        <article class="product-card featured-product">
+          <div class="product-image"><img src="lunettes-premium.jpg.jpg" alt="Lunettes de soleil Quartz" loading="lazy"><span class="product-tag">Signature</span></div>
+          <div class="product-content"><div class="product-topline"><h3>Quartz</h3><strong>149 €</strong></div><p>Notre modèle signature : une monture lumineuse et des verres premium au confort remarquable.</p><button class="add-cart" type="button">Ajouter au panier</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="advantages section-shell" id="avantages">
+      <div class="section-heading advantages-heading"><div><p class="eyebrow">La différence MWA</p><h2>Le style, sans compromis.</h2></div><p>Chaque détail est pensé pour que vos lunettes soient aussi agréables à porter qu'à regarder.</p></div>
+      <div class="advantage-grid">
+        <article><span class="advantage-number">01</span><h3>Protection UV400</h3><p>Une filtration officielle des rayons UVA et UVB pour protéger vos yeux au quotidien.</p></article>
+        <article><span class="advantage-number">02</span><h3>Verres polarisés</h3><p>Moins de reflets, plus de confort visuel, même lorsque le soleil se fait intense.</p></article>
+        <article><span class="advantage-number">03</span><h3>Garantie 2 ans</h3><p>Une qualité durable et une garantie contre les défauts de fabrication, en toute sérénité.</p></article>
+        <article><span class="advantage-number">04</span><h3>Expédition offerte</h3><p>La livraison est offerte dès 80 € d'achat, avec un emballage soigné et recyclable.</p></article>
+      </div>
+    </section>
+
+    <section class="story section-shell" id="histoire">
+      <div class="story-mark">M<span>WA</span></div>
+      <div><p class="eyebrow">Notre histoire</p><h2>Imaginer la lumière autrement.</h2><p>MWA est née d'une envie simple : créer des lunettes qui ne se contentent pas de protéger du soleil, mais qui donnent envie de sortir, de ralentir et de regarder plus loin.</p><p>De notre atelier aux visages qui les portent, chaque modèle est dessiné avec exigence et fabriqué pour accompagner les vrais moments de vie.</p><a class="text-link" href="#contact">Parler avec l'équipe <span aria-hidden="true">→</span></a></div>
+    </section>
+
+    <section class="journal section-shell" id="journal">
+      <div class="section-heading"><div><p class="eyebrow">Le journal MWA</p><h2>Quelques rayons de plus.</h2></div><a class="text-link" href="#contact">Tous les articles <span aria-hidden="true">→</span></a></div>
+      <div class="journal-grid"><article><img src="Image blog 1.jpg" alt="Conseils pour choisir sa monture" loading="lazy"><p class="article-meta">Style · 04.06.2026</p><h3>Choisir sa monture selon son visage</h3><a class="text-link" href="#contact">Lire l'article <span aria-hidden="true">→</span></a></article><article><img src="Image blog 2.jpg" alt="Verres polarisés MWA" loading="lazy"><p class="article-meta">Conseils · 28.05.2026</p><h3>Pourquoi les verres polarisés changent tout</h3><a class="text-link" href="#contact">Lire l'article <span aria-hidden="true">→</span></a></article><article><img src="Image blog 3.jpg" alt="Atelier de fabrication MWA" loading="lazy"><p class="article-meta">Maison · 12.05.2026</p><h3>Dans les coulisses de notre atelier</h3><a class="text-link" href="#contact">Lire l'article <span aria-hidden="true">→</span></a></article></div>
+    </section>
+
+    <section class="newsletter section-shell">
+      <div><p class="eyebrow">Le soleil dans votre boîte mail</p><h2>Recevez nos nouvelles.</h2></div>
+      <form class="newsletter-form"><label class="sr-only" for="email">Votre adresse e-mail</label><input id="email" type="email" placeholder="Votre adresse e-mail" required><button class="button button-dark" type="submit">S'inscrire <span aria-hidden="true">→</span></button></form>
+    </section>
+
+    <section class="contact section-shell" id="contact">
+      <div><p class="eyebrow">Une question, une envie</p><h2>Écrivez-nous.</h2><p>Notre équipe vous répond du lundi au vendredi, de 9h à 18h.</p><a class="text-link" href="mailto:contact@shinys.fr">contact@shinys.fr <span aria-hidden="true">→</span></a></div>
+      <form class="contact-form"><label for="contact-name">Votre nom</label><input id="contact-name" type="text" placeholder="Votre nom" required><label for="contact-message">Votre message</label><textarea id="contact-message" rows="4" placeholder="Comment pouvons-nous vous aider ?" required></textarea><button class="button button-dark" type="submit">Envoyer le message <span aria-hidden="true">→</span></button></form>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="logo" href="#accueil">MWA</a><p>Des lunettes qui captent la lumière. · contact@shinys.fr</p><p>© 2026 MWA</p></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
